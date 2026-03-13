@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from "react";
-import "./style.css";
 
 const ApiDemo = () => {
 
-  const [users, setUsers] = useState([]);
+  const [posts, setPosts] = useState([]);
 
   useEffect(() => {
 
-    fetch("https://jsonplaceholder.typicode.com/users")
+    fetch("https://dummy-json.mock.beeceptor.com/posts")
       .then((res) => res.json())
-      .then((data) => setUsers(data));
+      .then((data) => setPosts(data))
+      .catch((error) => console.error("API Error:", error));
 
   }, []);
 
@@ -17,28 +17,30 @@ const ApiDemo = () => {
 
     <div className="container">
 
-      <h1 className="page-title">API Demo Users</h1>
+      <h1 className="page-title">API Demo Posts</h1>
 
       <table className="user-table">
 
         <thead>
           <tr>
             <th>ID</th>
-            <th>Name</th>
-            <th>Email</th>
-            <th>City</th>
+            <th>User ID</th>
+            <th>Title</th>
+            <th>Body</th>
+            <th>Comments</th>
           </tr>
         </thead>
 
         <tbody>
 
-          {users.map((user) => (
+          {posts.map((post) => (
 
-            <tr key={user.id}>
-              <td>{user.id}</td>
-              <td>{user.name}</td>
-              <td>{user.email}</td>
-              <td>{user.address.city}</td>
+            <tr key={post.id}>
+              <td>{post.id}</td>
+              <td>{post.userId}</td>
+              <td>{post.title}</td>
+              <td>{post.body}</td>
+              <td>{post.comment_count}</td>
             </tr>
 
           ))}
@@ -50,7 +52,6 @@ const ApiDemo = () => {
     </div>
 
   );
-
 };
 
 export default ApiDemo;

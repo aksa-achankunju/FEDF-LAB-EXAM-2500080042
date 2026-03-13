@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from "./exam/Navbar";
+import Navbar from "./exam/NavBar";
 import Home from "./exam/Home";
 import Registration from "./exam/TeacherRegistration";
 import UserList from "./exam/Teacherlist";

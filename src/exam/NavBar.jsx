@@ -15,11 +15,11 @@ function NavBar() {
         </li>
 
         <li>
-          <Link to="/register">Registration</Link>
+          <Link to="/register">Teacher Registration</Link>
         </li>
 
         <li>
-          <Link to="/users">User List</Link>
+          <Link to="/users">Teacher List</Link>
         </li>
 
         <li>

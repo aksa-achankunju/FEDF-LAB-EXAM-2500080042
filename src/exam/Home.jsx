@@ -6,8 +6,7 @@ function Home() {
       <h1>Welcome to React Exam Application</h1>
 
       <p>
-        This application demonstrates React concepts like
-        components, routing, form handling and API calls.
+        <h1>Teacher Registration</h1>This application is for teachers in kl university.The application is made using react js.
       </p>
 
     </div>

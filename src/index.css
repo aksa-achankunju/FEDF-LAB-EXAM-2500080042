@@ -1,0 +1,36 @@
+body{
+  background-color:#d9d9d9;
+  font-family: "Times New Roman", serif;
+  margin:0;
+  padding:0;
+}
+
+.main-title{
+  text-align:right;
+  color:teal;
+  text-decoration: underline;
+  padding:20px;
+}
+
+.section-title{
+  color:darkred;
+  text-decoration: underline;
+}
+
+.container{
+  padding:30px;
+}
+
+input{
+  width:200px;
+  padding:5px;
+}
+
+button{
+  padding:5px 10px;
+  margin-top:5px;
+}
+
+table{
+  background:white;
+}

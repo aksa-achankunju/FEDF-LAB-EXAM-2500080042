@@ -1,22 +1,36 @@
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
+import "./exam.css";
 
 function NavBar() {
   return (
-    <nav style={{
-      display:"flex",
-      gap:"25px",
-      padding:"15px",
-      background:"#f4f6fb",
-      borderBottom:"1px solid #ccc"
-    }}>
 
-      <Link to="/">Home</Link>
-      <Link to="/registration">Registration</Link>
-      <Link to="/users">User List</Link>
-      <Link to="/api">API Demo</Link>
+    <nav className="navbar">
+
+      <h2>React Exam App</h2>
+
+      <ul>
+
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+
+        <li>
+          <Link to="/register">Registration</Link>
+        </li>
+
+        <li>
+          <Link to="/users">User List</Link>
+        </li>
+
+        <li>
+          <Link to="/api">API Demo</Link>
+        </li>
+
+      </ul>
 
     </nav>
-  )
+
+  );
 }
 
-export default NavBar
+export default NavBar;

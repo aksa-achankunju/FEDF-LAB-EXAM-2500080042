@@ -1,0 +1,51 @@
+body{
+  font-family: Arial;
+  background:#f5f7fb;
+}
+
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  padding:15px;
+  background:#6c8cff;
+  color:white;
+}
+
+.navbar ul{
+  display:flex;
+  gap:20px;
+  list-style:none;
+}
+
+.navbar a{
+  color:white;
+  text-decoration:none;
+}
+
+.container{
+  padding:30px;
+}
+
+form{
+  display:flex;
+  flex-direction:column;
+  width:300px;
+  gap:10px;
+}
+
+input{
+  padding:8px;
+}
+
+button{
+  padding:10px;
+  background:#6c8cff;
+  color:white;
+  border:none;
+}
+
+.card{
+  border:1px solid #ccc;
+  padding:10px;
+  margin:10px 0;
+}
